@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "name": "logs",
+      "type": "com.mao.logs.config.LogsProperties",
+      "sourceType": "com.mao.logs.config.LogsProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.logs.autoOpen",
+      "type": "java.lang.Boolean",
+      "description": "是否自动开启日志",
+      "sourceType": "com.mao.logs.config.LogsProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.logs.pointcutPackageName",
+      "type": "java.lang.String",
+      "description": "日志切点包路径",
+      "sourceType": "com.mao.logs.config.LogsProperties",
+      "defaultValue": "com"
+    },
+    {
+      "name": "spring.logs.pointcutExpression",
+      "type": "java.lang.String",
+      "description": "切点表单式 - Expression",
+      "sourceType": "com.mao.logs.config.LogsProperties",
+      "defaultValue": "execution(* com..*(..))"
+    }
+  ],
+  "hints": [
+
+  ]
+}
