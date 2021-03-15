@@ -117,6 +117,9 @@ public class LogsTestController {
         user.setName("test");
         user.setGenderEnum(genderEnum);
         RestResponse restResponse = new RestResponse(user);
+
+
+
         return restResponse;
     }
 
